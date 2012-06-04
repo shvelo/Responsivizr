@@ -1,0 +1,122 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Editor - Responsivizr</title>
+<link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" href="bootstrap/themes/simplex.css">
+<link rel="stylesheet" href="css/bootstrap-editor.css">
+<link rel="stylesheet" href="css/style.css">
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="brand" href="/">Responsivizr</a>
+			<ul class="nav format">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> Format: <span class="format-indicator">desktop</span>
+						<b class="caret"></b>
+				</a>
+					<ul class="dropdown-menu format-switch">
+						<li data-format="desktop"><a href="#">Desktop</a>
+						<li data-format="tablet"><a href="#">Tablet</a>
+						<li data-format="phone"><a href="#">Phone</a>
+					</ul></li>
+				<li><a href="#" class="preview-toggle">
+					<span class="preview-mode">
+						<i class="icon-eye-open"></i> Preview
+					</span>
+					<span class="edit-mode">
+						<i class="icon-edit"></i> Edit
+					</span>
+					</a>
+				<li><a href="#" class="generate"><span class="label label-success">Generate!</span></a>
+			</ul>
+			<ul class="nav format pull-right">
+				<li><a data-toggle="modal" href="#about">About</a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12 main">
+			<div class="editor desktop container-fluid">
+
+				<div class="erow">
+					<div class="row-fluid actual-row">
+						<div class="span12 actual-column">
+							<div class="content placeholder" contenteditable="true">
+								Type here
+							</div>
+							<footer class="column-controls">
+								<span class="remove"><i class="icon-remove"></i></span>
+							</footer>
+						</div>			
+					</div>
+					<footer class="row-controls">
+						<span class="add-column">Add Column</span>
+					</footer>
+				</div>
+
+				<div class="add-row erow">
+					<span>+</span> Add row
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="templates">
+	<div class="template-erow">
+		<div class="erow">
+			<div class="row-fluid actual-row">
+				<div class="span12 actual-column">					
+					<div class="content placeholder" contenteditable="true">
+						Type here
+					</div>
+					<footer class="column-controls">
+						<span class="remove"><i class="icon-remove"></i></span>
+					</footer>
+				</div>			
+			</div>
+			<footer class="row-controls">
+				<span class="add-column">Add Column</span>
+			</footer>
+		</div>
+	</div>
+	<div class="template-column">
+		<div class="span12 actual-column">
+			<div class="content placeholder" contenteditable="true">
+				Type here
+			</div>
+			<footer class="column-controls">
+				<span class="remove"><i class="icon-remove"></i></span>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<div class="content-controls hide">
+	Content Controls		
+</div>
+
+<div class="modal hide fade" id="about">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">×</button>
+		<h3>About Responsivizr</h3>
+	</div>
+	<div class="modal-body">
+		<p>Responsivizr is a responsive page builder,<br>
+		It's in early development stage, so don't expect it to work.<br>
+		By <a href="http://nicksh.com">Nick Shvelidze</a>.
+	</div>
+	<div class="modal-footer">
+		<a href="http://github.com/shvelo/Responsivizr" class="btn btn-primary">GitHub</a>
+		<a href="#" class="btn" data-dismiss="modal">Close</a>
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/editor.js"></script>
