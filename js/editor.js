@@ -71,6 +71,10 @@ $(function(){
 	$('.preview-toggle').click(function(){
 		$(this).toggleClass('on');
 		$('.editor').toggleClass('preview');
+		if($(this).is('.on'))
+			$('.editor .content').attr('contenteditable', 'false');
+		else
+			$('.editor .content').attr('contenteditable', 'true');
 		return false;
 	});
 	$('.format-switch li a').click(function(){
